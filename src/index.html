@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
-  </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+<html>
+<head>
+  <title>Мапа з місцями</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="../src/styles/main.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <form id="placeForm">
+    <label for="placeName">Назва:</label>
+    <input type="text" id="placeName" required>
+    <br>
+    <label for="placeDescription">Опис:</label>
+    <textarea id="placeDescription" required></textarea>
+    <br>
+    <label for="placeLatitude">Широта:</label>
+    <input type="text" id="placeLatitude" required>
+    <br>
+    <label for="placeLongitude">Довгота:</label>
+    <input type="text" id="placeLongitude" required>
+    <br>
+    <button type="submit">Додати</button>
+  </form>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="../src/scripts/map.js"></script>
+</body>
 </html>
